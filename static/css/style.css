@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+form{
+    width: 60%;
+    position: absolute;
+    top: 13%;
+    left: 12%;
+    font-family: 'Blinker', sans-serif;
+    color: rgb(167, 150, 150);
+}
+
+.head h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    float: left;
+    border-bottom: 2px solid rgb(167, 150, 150);
+    margin: 0 3% ;
+    padding: 1% 0;
+}
+
+table{
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 1%;
+
+}
+
+/* For 1st column of the table */
+.attribute{
+    width: 23%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* For all the other columns of the table */
+.values{
+    width: 150px;
+    overflow: hidden;
+}
+
+/* for inputs */
+input{
+    padding: 3px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(167, 150, 150);
+    outline: none;
+    font-size: 14px;
+    font-family: 'Blinker', sans-serif;
+}
+
+/* for attaching certificate */
+input[type="file"]{
+    width: 150px;
+    border: none;
+}
+
+    
+/* for course selection */
+select{
+    background: none;
+    font-family: 'Blinker', sans-serif;
+    color: rgb(167, 150, 150);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+select:hover{
+    box-shadow: 2px 2px gray;
+}
+option{
+    background: none;
+    font-family: 'Blinker', sans-serif;
+    color: rgb(167, 150, 150);
+    font-size: 14px;
+}
+
+
+/* icons */
+i{
+    font-size: 14px;
+    margin: 5px;
+}
+
+
+/* Submit Button*/
+.btn{
+    margin-top: 1%;
+    margin-left: 4%;
+    width: 20%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(167, 150, 150);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600px;
+    outline:none;
+    border: none;
+}
+.btn:hover{
+    background-color: darkgray;
+    color: black;
+    cursor: pointer;
+}

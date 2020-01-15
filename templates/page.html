@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bishnu</title>
+        <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/style2.css') }}" >
+    </head>
+    <body>
+<header>
+    <div class='headerstyle'>
+        <div ><b><font size='5' color="white">University of Kalyani</font></b></div>
+        
+        <div class=" menu">
+                <a href='#'><font color="white">Home</font></a>&nbsp;&nbsp;
+                <a href='#'><font color="white">Notification</font></a>&nbsp;&nbsp;
+                <a href='#'><font color="white">Course description </font></a>&nbsp;&nbsp;
+                <a href='#'><font color="white">Tender</font></a>&nbsp;&nbsp;
+                <a href='#'><font color="white">Result</font></a>&nbsp;&nbsp;
+                <a href='#'><font color="white">Student registration</font></a>&nbsp;&nbsp;
+                </div>
+    </div>    
+</header>
+<marquee behavior="scroll" direction="right"><font color='red' size='5' style="font-style: italic"> Student Registration</font></marquee>
+
+<div class='login'>
+    <form>  <br>
+
+        <font color='green' size='5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>LogIn</b></font>&nbsp;<a href="/index" style="padding-left: 100px">New Registration</a><br><br>
+        <input type="text" placeholder="Enter Username" size="40%" id="user"> <br><br>
+       <br><input type='password' placeholder="Enter Password" id="pass"><br>
+        <br><button title="click here to login" id="submit"onclick="alert('login sucessfully')">Log in</button>
+        <a href="#" id="forgot">Forgot password?</a>
+    </form>
+
+</div>
+
+<div class='news'>
+<from>
+    &nbsp;&nbsp;<font color='blue' size='5'> News and event</font>
+    <br><marquee behavior="scroll" direction="up">
+    <font color='red'>        
+        <ul>
+        <li>Student Registration started in 25/08/19 </li>
+        <li>Bishnupada das</li>
+        <li>Souvik laha</li>
+        <li>hemanta ghosh</li>
+        <li>sudip samanta</li>
+        <li>sayan ghosh</li>
+        <li>rahul saha</li>
+        <li>silpa pal</li>
+        <li>nibadita malakar</li>
+        <li>sayani badyaker</li>
+        <li>lovely chakraborty</li>
+        <li>shrestha dey</li>
+        <li>tapas das</li>
+        <li>somashree sur</li>
+        <li>tina bonnik</li>
+        <li>sampa pal</li>
+        <li>arko das</li>
+    </ul>
+</font>
+</marquee>
+</from>
+</div>
+
+<div class="bodypart">
+   <center> <img src="{{url_for('static',filename='img/Bidhan_Chandra_Roy.jpg')}}" height="250" width="200"><br>
+    <font color='blue'>Dr. Bidhan Chandra Roy<br>(Founder of Kalyani university) </font>
+   </center>
+   <p>Dr. Bidhan Chandra Roy was a world class doctor cum politician. 
+       Recipi-ent of Bharat Ratna in 1961 for his notable services to the nation. 
+       He was the first Chief Minister of West Bengal.   
+       Dr. B. C. Roy was born on 1st July 1882 in Patna.<br>
+       His personality was deeply influenced by his mother, Aghore Kamini, who was a social worker. 
+       He belonged to an educated and d cultured family. He passed school and college from Patna. Later on he passed his M.D. from Calcutta. 
+       Then he passed with distinction, (London) and ER.C.R (England), 
+       Dr. Roy started his career as an Assistant a Surgeon and soon he made his mark in his field.
+       Later on, he entered politics in 1923 as independent candidate.<br><br> Soon he became a famous national leader. 
+       He came in close personal contact with Nehru and Mahatma Gandhi, as a physician, under his care.
+       Dr. Roy worked in many top places due to his excellent inherent powers. He was vice-chancellor of the Calcutta University from 1942-44. 
+When India became a republic he was elected as Chief Minister of West-Bengal and proved his ability. 
+He continued his post side by side continuing his loving profession of Medicine.
+
+He died on July 1, 1962 in Kolkata which was a co-incidence that his birth and death dates were the same.  
+    </p>
+</div>
+<div>
+    <center>
+    <font size="0.5">copyright@bishnu,souvik,ayan</font>
+</center>
+</div>
+    </body>
+</html>

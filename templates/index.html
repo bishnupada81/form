@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Blinker|Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fe5dd24ad.js"></script>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <form>
+        <table>
+            <div class="head">
+                <h1>Register</h1>
+            </div>
+            <tr>
+                <td class="attribute"><i class="fas fa-user-graduate"></i>Name</td>
+                <td class="values"><input type="text" placeholder="First Name"></td>
+                <td class="values"><input type="text" placeholder="Middle Name"></td>
+                <td class="values"><input type="text" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-user-tie"></i>Father Name</td>
+                <td class="values"><input type="text" placeholder="enter father name"></td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-envelope"></i>Email Address</td>
+                <td class="values"><input type="email" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-phone-alt"></i>Contact No</td>
+                <td class="values"><input type="tel" placeholder="enter your contact no"></td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-birthday-cake"></i>Date of Birth</td>
+                <td class="values"><input type="date"></td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-venus-mars"></i>Gender</td>
+                <td class="values"><input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-map-marked-alt"></i>Residential Address</td>
+                <td class="values"><input type="text" placeholder="Locality"></td>
+                <td class="values"><input type="text" placeholder="City"></td>
+                <td class="values"><input type="text" placeholder="District"></td>
+            </tr>
+            <tr>
+                <td class="values"></td>
+                <td class="values"><input type="text" placeholder="State"></td>
+                <td class="values"><input type="text" placeholder="Pincode"></td>
+                <td class="values"></td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-graduation-cap"></i>Applying for</td>
+                <td>
+                    <select>
+                        <option>Select Course</option>
+                        <option>MCA</option>
+                        <option>MTech</option>
+                        <option>PhD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-marker"></i>Score</td>
+                <td class="values"><input type="text" placeholder="Score out of 100"></td>
+            </tr>
+            <tr>
+                <td class="attribute"><i class="fas fa-certificate"></i>Upload Marksheet</td>
+                <td class="values"><input type="file" accept=".pdf,.doc,.docx"></td>
+            </tr>
+        </table>
+        <input class="btn" type="submit" value="Submit" onclick="alert('Registered Successfully')">
+    </form>
+</body>
+<script src="../js/user.js"></script>
+
+</html>
+
+

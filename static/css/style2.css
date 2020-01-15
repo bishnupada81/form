@@ -1,0 +1,60 @@
+.headerstyle{
+    height: 1%;
+    width: auto;
+    border: fixed 4px ;
+    background-color: blue;
+    border-bottom: solid 4px  #FFF04E;
+}
+
+.menu{
+    margin-left: 700px;
+    margin-bottom: 1%;
+}
+
+a{
+    text-decoration: none;
+}
+.login{
+    border:solid 1px;
+    border-radius:10%;
+    height: 300px;
+    width: 30%;
+    margin-left: 70%;
+
+}
+
+#user{
+    height: 40px;
+    width: 200px;
+    margin-left: 20%;
+    border: solid #919191 ;
+}
+
+#pass{
+    height: 40px;
+    width: 200px;
+    margin-top: -20%;
+    margin-left: 20%;
+    border: solid #68217A ;   
+}
+
+#submit{
+    margin-left: 25%;
+    height: 40px;
+    width: 150px;
+    border-radius:50%;
+}
+
+#forgot{
+    margin-left: 65%;  
+}
+.news{
+    margin-left: 70%;
+    margin-top: 3%;
+
+}
+.bodypart{
+    height: 78%;
+    width: 69%;
+    margin-top: -53%;
+}
