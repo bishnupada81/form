@@ -11,55 +11,54 @@
 </head>
 <body>
 
-    <form>
+    <form action="/index" method="POST">
         <table>
             <div class="head">
                 <h1>Register</h1>
             </div>
             <tr>
                 <td class="attribute"><i class="fas fa-user-graduate"></i>Name</td>
-                <td class="values"><input type="text" placeholder="First Name"></td>
-                <td class="values"><input type="text" placeholder="Middle Name"></td>
-                <td class="values"><input type="text" placeholder="Last Name"></td>
+                <td class="values"><input type="text" placeholder="First Name" name="first_name"></td>
+                <td class="values"><input type="text" placeholder="Middle Name" name="middle_name"></td>
+                <td class="values"><input type="text" placeholder="Last Name" name="last_name"></td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-user-tie"></i>Father Name</td>
-                <td class="values"><input type="text" placeholder="enter father name"></td>
+                <td class="values"><input type="text" placeholder="enter father name" name="father"></td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-envelope"></i>Email Address</td>
-                <td class="values"><input type="email" placeholder="enter your email"></td>
+                <td class="values"><input type="email" placeholder="enter your email" name="email"></td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-phone-alt"></i>Contact No</td>
-                <td class="values"><input type="tel" placeholder="enter your contact no"></td>
+                <td class="values"><input type="tel" placeholder="enter your contact no" name="contact_no"></td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-birthday-cake"></i>Date of Birth</td>
-                <td class="values"><input type="date"></td>
+                <td class="values"><input type="date" name="date_of_birth"></td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-venus-mars"></i>Gender</td>
-                <td class="values"><input type="radio" name="gender">Male
-                    <input type="radio" name="gender">Female
+                <td class="values"><input type="text" placeholder="enter your Sex" name="Gender">
                 </td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-map-marked-alt"></i>Residential Address</td>
-                <td class="values"><input type="text" placeholder="Locality"></td>
-                <td class="values"><input type="text" placeholder="City"></td>
-                <td class="values"><input type="text" placeholder="District"></td>
+                <td class="values"><input type="text" placeholder="Locality" name="Loclity"></td>
+                <td class="values"><input type="text" placeholder="City" name="city"></td>
+                <td class="values"><input type="text" placeholder="District" name="district"></td>
             </tr>
             <tr>
                 <td class="values"></td>
-                <td class="values"><input type="text" placeholder="State"></td>
-                <td class="values"><input type="text" placeholder="Pincode"></td>
+                <td class="values"><input type="text" placeholder="State" name="state"></td>
+                <td class="values"><input type="text" placeholder="Pincode" name="pin"></td>
                 <td class="values"></td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-graduation-cap"></i>Applying for</td>
                 <td>
-                    <select>
+                    <select name="application_for">
                         <option>Select Course</option>
                         <option>MCA</option>
                         <option>MTech</option>
@@ -69,18 +68,17 @@
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-marker"></i>Score</td>
-                <td class="values"><input type="text" placeholder="Score out of 100"></td>
+                <td class="values"><input type="text" placeholder="Score out of 100" name="score"></td>
             </tr>
             <tr>
                 <td class="attribute"><i class="fas fa-certificate"></i>Upload Marksheet</td>
-                <td class="values"><input type="file" accept=".pdf,.doc,.docx"></td>
+                <td class="values"><input type="file" accept=".pdf,.doc,.docx" name="marksheet"></td>
             </tr>
         </table>
         <input class="btn" type="submit" value="Submit" onclick="alert('Registered Successfully')">
+        <a href="/data"><input class="btn" type="show" value="show"></a>
     </form>
 </body>
-<script src="../js/user.js"></script>
-
 </html>
 
 

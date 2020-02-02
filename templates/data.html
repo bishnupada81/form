@@ -1,33 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your data</title>
-</head>
-<body>
-    <h3> Showing data for {{session['username']}} </h3>
-    <table border=2>
-        <thead>
-            <td>user_id</td>
-            <td>username</td>
-            <td>password</td>
-            <td>fullname</td>
-            <td>fathersname</td>
-            <td>contactno</td>
-        </thead>
-        <tr>
-            <td>{{userdata[0]}}</td>
-            <td>{{userdata[1]}}</td>
-            <td>{{userdata[2]}}</td>
-            <td>{{userdata[3]}}</td>
-            <td>{{userdata[4]}}</td>
-            <td>{{userdata[5]}}</td>
-        </tr>
-    </table>
-    
-    <a href="/update">Update data</a>
-    <a href="/logout">Logout</a>
-</body>
+<html>
+    <head>
+        <title>show</title>
+    </head>
+    <body>
+        <h1><center>show data</center></h1>
+        <table border=2>
+            <thead>
+                <td>registration_id</td>
+                <td>Firstname</td>
+                <td>Middlename</td>
+                <td>Lastname</td>
+                <td>Fathername</td>
+                <td>Email</td>
+                <td>contactno</td>
+                <td>DOB</td>
+                <td>Gender</td>
+                <td>Locality</td>
+                <td>City</td>
+                <td>District</td>
+                <td>State</td>
+                <td>Pin </td>
+                <td>Application For</td>
+                <td>Score</td>
+                <td>Marksheet</td>
+
+            </thead>
+            {% for item in data %}
+                <tr>
+                    <td>{{item[0]}}</td>
+                    <td>{{item[1]}}</td>
+                    <td>{{item[2]}}</td>
+                    <td>{{item[3]}}</td>
+                    <td>{{item[4]}}</td>
+                    <td>{{item[5]}}</td>
+                    <td>{{item[6]}}</td>
+                    <td>{{item[7]}}</td>
+                    <td>{{item[8]}}</td>
+                    <td>{{item[9]}}</td>
+                    <td>{{item[10]}}</td>
+                    <td>{{item[11]}}</td>
+                    <td>{{item[12]}}</td>
+                    <td>{{item[13]}}</td>
+                    <td>{{item[14]}}</td>
+                    <td>{{item[15]}}</td>
+                    <td>{{item[16]}}</td>
+                    <td>{{item[17]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+    </body>
 </html>
